@@ -2,7 +2,8 @@
 
 > The leaderboard website displays scores submitted by different players.
 
-![Screenshot](![image](https://user-images.githubusercontent.com/60876346/128569045-f65c37f4-94a7-4c48-b8fc-d480be45b482.png)
+![Screenshot (222)](https://user-images.githubusercontent.com/60876346/128569664-c180c955-b4c4-45da-822b-bbdaad9ccca2.png)
+
 
 The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external [Leaderboard API service](https://www.notion.so/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3).
 
