@@ -1,12 +1,14 @@
-.flex-container {
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+body {
   display: flex;
+  align-items: center;
 }
 
-.flex-container > div {
-  background-color: #ddd3d3;
-  width: 100%;
-  margin: 10px;
+header {
   text-align: center;
+  margin-bottom: 3rem;
+  margin-top: -8rem;
 }
 
 .title {
@@ -25,7 +27,7 @@
 }
 
 .submit-button {
-  margin-left: 16%;
+  margin-left: 0;
 }
 
 li {
@@ -42,4 +44,8 @@ li:nth-child(even) {
 
 ul {
   list-style: none;
+}
+
+.add-score-section {
+  padding-left: 8rem;
 }
