@@ -2,14 +2,14 @@ import { getScores, addScore } from './api';
 
 export const displayList = (result) => {
   const ul = document.querySelector('#score');
-  ul.classList.remove('border', 'border-primary');
+  ul.classList.remove('border');
   ul.innerHTML = '';
   result.forEach(({ user, score }) => {
     const li = document.createElement('li');
     li.textContent = `${user}: ${score}`;
     ul.appendChild(li);
   });
-  ul.classList.add('border', 'border-primary');
+  ul.classList.add('border');
 };
 
 export const refreshBtnListener = async () => {
