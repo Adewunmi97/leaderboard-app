@@ -16,4 +16,12 @@ export const displayList = (result) => {
 }
 
 
-
+export const sumbitFormListener = async (e) => {
+    e.preventDefault();
+    e.stopPropagation()
+    const name = document.querySelector('#name-input');
+    const score = document.querySelector('#score-input');
+    const res = await addScore({ "user": name.value, "score": score.value});
+    name.value = '';
+    score.value = '';
+}
