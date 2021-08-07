@@ -4,6 +4,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
+  devtool: false,
+  mode: 'production',
   output: {
     filename: 'index.js',
     path: path.resolve(__dirname, 'dist'),
@@ -34,6 +36,10 @@ module.exports = {
     new MiniCssExtractPlugin(),
     new HtmlWebpackPlugin({
       template: './src/index.html',
+      inject: false,
     }),
   ],
+  performance: {
+    hints: false,
+  },
 };
