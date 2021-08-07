@@ -1,0 +1,51 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+body {
+  display: flex;
+  align-items: center;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-top: -8rem;
+}
+
+.title {
+  margin-left: 18px;
+}
+
+.score-header {
+  display: flex;
+  text-align: center;
+  margin: 10px;
+  justify-content: space-around;
+}
+
+.score-list {
+  padding: 5px;
+}
+
+.submit-button {
+  margin-left: 0;
+}
+
+li {
+  color: black;
+}
+
+li:nth-child(odd) {
+  background-color: rgb(127, 238, 238);
+}
+
+li:nth-child(even) {
+  background-color: rgb(160, 158, 160);
+}
+
+ul {
+  list-style: none;
+}
+
+.add-score-section {
+  padding-left: 8rem;
+}

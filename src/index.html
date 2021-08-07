@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./bootstrap.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+      <header>
+        <h1 class="title">Leaderboard</h1>
+      </header>
+      <main class="flex-container">
+        <div class="row">
+        <div class="scores-section col-8 col-sm-6">
+          <header class="score-header mb-5">
+            <h2>Recent Scores</h2>
+            <button id="refresh-btn" class="btn btn-secondary btn-sm" type="button">
+              Refresh
+            </button>
+          </header>
+          <ul class="score-list  border border-primary" id="score">
+            <li>Name: 100</li>
+            <li>Name: 200</li>
+            <li>Name: 300</li>
+          </ul>
+        </div>
+        <div class="add-score-section col-8 col-sm-6 pl-5">
+          <h2 class="mb-5">Add score</h2>
+          <form id="add-a-score" class="add-a-score-form">
+            <input id="name-input" class="score-input" placeholder="Your name" required type="text" /><br>
+            <br>
+            <input id="score-input" class="score-input" placeholder="Your score" required type="number" min="0" /><br>
+            <br>
+            <button class="btn btn-primary submit-button action-button ml-0" type="submit">
+              Submit
+            </button>
+          </form>
+        </div>
+        </div>
+      </main>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
